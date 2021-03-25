@@ -26,3 +26,5 @@ serverless deploy
 El resultado que devolverá contendrá el link de acceso a la API, este se deberá agregar al codigo de la app LambdaClima.py
 
 Este se ejecuta: python3 LambdaClima.py
+
+
