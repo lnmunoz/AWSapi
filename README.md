@@ -11,17 +11,23 @@
   <li>(Sugerido) curl</li>
 </ul>  
 <p><b>Instalación de Serverless:</b></p>
+
 ```
 curl -o- -L https://slss.io/install | bash
 ```
+
 En el presente directorio, se deberá ejecutar el siguiente comando:
+
 ```
 serverless create --template aws-python3
 ```
+
 Se deberán configurar los datos de accesos a AWS
+
 ```
 serverless config credentials --provider aws --key "personalKey" --secret "personalSecret" --overwrite
 ```
+
 Ademas, se deberá configurar el rol dentro de serverless.yml
 
 Ejemplo:    <p><i>role: arn:aws:iam::ID:role/ServRoleName</i></p>
@@ -34,7 +40,7 @@ El resultado que devolverá contendrá el link de acceso a la API, este se deber
 
 Este se ejecuta: 
 ```
-python3 LambdaClima.py
+python3 WeatherRequest.py
 ```
 Se deberá ingresar el nombre de una ciudad a consultar.
 Ejemplo:
