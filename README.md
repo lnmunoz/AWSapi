@@ -6,9 +6,9 @@
 <!--<p><strong>Dependencias necesarias:</strong></p> -->
 <h2>Paquetes necesarios y recomendados</h2>
 <ul>
-  <li>(Necesario)serverless</li>
-  <li>(Sugerido) GIT</li>
-  <li>(Sugerido) curl</li>
+  <li>serverless *necesario</li>
+  <li>GIT *Sugerido</li>
+  <li>curl *Sugerido</li>
 </ul>  
 <p><b>Instalación de Serverless:</b></p>
 
@@ -36,7 +36,7 @@ El despliegue se realizará con las siguiente orden:
 ```
 serverless deploy
 ```
-El resultado que devolverá contendrá el link de acceso a la API, este se deberá agregar al codigo de la app <p><i>LambdaClima.py</i></p>
+El resultado que devolverá contendrá el link de acceso a la API, este se deberá agregar al codigo de la app <p><i>WeatherRequest.py</i></p>
 
 Este se ejecuta: 
 ```
