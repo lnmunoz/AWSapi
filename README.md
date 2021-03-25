@@ -27,4 +27,4 @@ El resultado que devolverá contendrá el link de acceso a la API, este se deber
 
 Este se ejecuta: python3 LambdaClima.py
 
-
+Se deberá ingresar el nombre de una ciudad a consultar
