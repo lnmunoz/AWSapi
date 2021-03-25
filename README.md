@@ -3,7 +3,7 @@
 <html>
 <body>
 
-<p><strong>Dependencias necesarias:</strong></p>
+<!--<p><strong>Dependencias necesarias:</strong></p> -->
 <h2>Paquetes necesarios y recomendados</h2>
 <ul>
   <li>(Necesario)serverless</li>
@@ -46,6 +46,12 @@ Se deberá ingresar el nombre de una ciudad a consultar.
 Ejemplo:
 
 <img src="Console.jpg" alt="Console">
+
+Por resultado se obtiene:
+
+<img src="Salida.jpg" alt="Console">
+
+
 
 </body>
 </html>

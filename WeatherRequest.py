@@ -20,9 +20,11 @@ headers = {
 
 response = requests.request("POST", url, headers=headers, data=payload)
 
-print(response.text)
+#print(response.text)
 salida = response.json()
-print("Datos del tiempo en: "+ciudad+" son: ")
+print("------------------------------------------------------")
+print("Datos del tiempo en "+ciudad+" son: ")
 print("Temperatura: "+str(salida['temperatura']))
 print("Viento: "+str(salida['viento']))
 print("Gracias por utilizar el servicio")
+print("------------------------------------------------------")
