@@ -14,7 +14,7 @@ def lambda_handler(event, context):
     response = requests.get(city)
     result = response.json()
     code = result['cod']
-    if code == '200':
+    if code == 200:
         message = {"ciudad" : ciudad,
             "temperatura":int(result['main']['temp'])- 273.15,
             "viento":result['wind']['speed'],

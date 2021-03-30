@@ -7,7 +7,7 @@ ciudad = str(input("Ingrese nombre de ciudad: "))
 
 #url = "https://euic8aetta.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
 
-url = "https://82bq7p8o10.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
+url = "https://sddhex0a2j.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
 
 payload= '{\r\n    \"ciudad\":\"'+ciudad+'\"\r\n    }'
 
