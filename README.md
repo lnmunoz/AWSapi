@@ -45,11 +45,11 @@ python3 WeatherRequest.py
 Se deberá ingresar el nombre de una ciudad a consultar.
 Ejemplo:
 
-<img src="../resourses/Console.jpg" alt="Console">
+<img src="/resourses/Console.jpg" alt="Console">
 
 Por resultado se obtiene:
 
-<img src="../resourses/Salida.jpg" alt="Console">
+<img src="/resourses/Salida.jpg" alt="Console">
 
 
 
