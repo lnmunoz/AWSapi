@@ -13,19 +13,22 @@ def lambda_handler(event, context):
     city = "https://v1.nocodeapi.com/lmunoz/ow/gypnqySHxLOMWguT/byCityName?q="+ciudad
     response = requests.get(city)
     result = response.json()
-    
-    message = {"ciudad" : ciudad,
+    code = result['cod']
+    if code == '200':
+        message = {"ciudad" : ciudad,
             "temperatura":int(result['main']['temp'])- 273.15,
-            "viento":result['wind']['speed']
+            "viento":result['wind']['speed'],
+            "code": "200"
               }
-              
-              
+    else:
+        message = {
+            "code": "202"
+              }
     return {
-            'statusCode': 200,
-            'headers': {'Content-Type': 'application/json'},
-            'body': json.dumps(message)
-            }
-
+        'statusCode': 200,
+        'headers': {'Content-Type': 'application/json'},
+        'body': json.dumps(message)
+        }
 
 
 
