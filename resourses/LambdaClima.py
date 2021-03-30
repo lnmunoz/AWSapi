@@ -1,10 +1,6 @@
 from botocore.vendored import requests
 import json
-#import boto3
-#from datetime import datetime
-#That's the lambda handler, you can not modify this method
-# the parameters from JSON body can be accessed like deviceId = event['deviceId']
-#ciudad = 'london'
+
 
 def lambda_handler(event, context):
     print(event)
@@ -15,8 +11,10 @@ def lambda_handler(event, context):
     result = response.json()
     
     message = {"ciudad" : ciudad,
-            "temperatura":int(result['main']['temp'])- 273.15,
-            "viento":result['wind']['speed']
+            "Temperatura":int(result['main']['temp'])- 273.15,
+            "Presión":result['main']['pressure'],
+            "Humedad":result['main']['humidity']
+            "Viento":result['wind']['speed']
               }
               
               
