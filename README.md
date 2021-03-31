@@ -7,8 +7,9 @@
 <h2>Paquetes necesarios y recomendados</h2>
 <ul>
   <li>serverless *necesario</li>
-  <li>GIT *Sugerido</li>
-  <li>curl *Sugerido</li>
+  <li>Python 3.6 *necesario</li>
+  <li>GIT *sugerido</li>
+  <li>curl *sugerido</li>
 </ul>  
 <p><b>Instalación de Serverless:</b></p>
 
