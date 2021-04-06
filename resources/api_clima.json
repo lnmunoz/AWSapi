@@ -1,0 +1,15 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "API clima schema",
+    "required": ["ciudad", "name"],
+    "properties": {
+      "ciudad": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      }
+    }
+  }

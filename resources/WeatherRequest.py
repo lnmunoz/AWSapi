@@ -1,6 +1,7 @@
 import requests
 import json
 import unicodedata
+import logging
 
 
 def quitartil(text):
@@ -30,7 +31,7 @@ ciudad = quitartil(ciudad)
 
 #url = "https://euic8aetta.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
 
-url = "https://2fcs79r6k1.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
+url = "https://fc7eb5lkp2.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
 
 payload= '{\r\n    \"ciudad\":\"'+ciudad+'\"\r\n    }'
 
@@ -48,8 +49,14 @@ response = requests.request("POST", url, headers=headers, data=payload)
 #print(response)
 
 salida = response.json()
-#print (salida)
-code = salida['code']
+logging.basicConfig(filename="registro.log", level=logging.DEBUG)
+logging.debug('Prueba logueo')
+logging.info(salida)
+logging.info(response)
+#code = salida['code']
+code = str(response.status_code)
+logging.info(code)
+
 #print(code)
 if code == '200':
   print

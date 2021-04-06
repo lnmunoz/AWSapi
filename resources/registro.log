@@ -1,0 +1,54 @@
+DEBUG:root:Prueba logueo
+INFO:root:{'ciudad': 'cordoba', 'temperatura': 17.850000000000023, 'viento': 5.14, 'code': '200'}
+DEBUG:root:Prueba logueo
+INFO:root:{'code': '202'}
+DEBUG:root:Prueba logueo
+INFO:root:{'message': 'Internal server error'}
+DEBUG:root:Prueba logueo
+INFO:root:{'ciudad': 'cordoba', 'temperatura': 17.850000000000023, 'viento': 3.09, 'code': '200'}
+DEBUG:root:Prueba logueo
+INFO:root:{'ciudad': 'cordoba', 'temperatura': 17.850000000000023, 'viento': 3.09, 'code': '200'}
+INFO:root:<Response [200]>
+DEBUG:root:Prueba logueo
+INFO:root:{'message': 'Internal server error'}
+INFO:root:<Response [502]>
+DEBUG:root:Prueba logueo
+INFO:root:{'message': 'Internal server error'}
+INFO:root:<Response [502]>
+INFO:root:502
+DEBUG:root:Prueba logueo
+INFO:root:{'ciudad': 'cordoba', 'temperatura': 16.850000000000023, 'viento': 3.09, 'code': '200'}
+INFO:root:<Response [200]>
+INFO:root:200
+DEBUG:root:Prueba logueo
+INFO:root:{'ciudad': 'rio cuarto', 'temperatura': 16.850000000000023, 'viento': 2.24, 'code': '200'}
+INFO:root:<Response [200]>
+INFO:root:200
+DEBUG:root:Prueba logueo
+INFO:root:{'message': 'Internal server error'}
+INFO:root:<Response [502]>
+INFO:root:502
+DEBUG:root:Prueba logueo
+INFO:root:{'message': 'Internal server error'}
+INFO:root:<Response [502]>
+INFO:root:502
+DEBUG:root:Prueba logueo
+INFO:root:{'ciudad': 'cordoba', 'temperatura': 16.850000000000023, 'viento': 3.09, 'code': '200'}
+INFO:root:<Response [200]>
+INFO:root:200
+DEBUG:root:Prueba logueo
+INFO:root:{'Error': 'error'}
+INFO:root:<Response [202]>
+INFO:root:202
+DEBUG:root:Prueba logueo
+INFO:root:{'ciudad': 'cordoba', 'temperatura': 16.850000000000023, 'viento': 3.09, 'code': '200'}
+INFO:root:<Response [200]>
+INFO:root:200
+DEBUG:root:Prueba logueo
+INFO:root:{'Error': 'Error en parametro'}
+INFO:root:<Response [202]>
+INFO:root:202
+DEBUG:root:Prueba logueo
+INFO:root:{'Error': 'Error en parametro'}
+INFO:root:<Response [202]>
+INFO:root:202

@@ -17,4 +17,8 @@ functions:
       - http:
           path: LambdaClima/crea
           method: post
+          request:
+            schema:
+              application/json: ${file(./resources/api_clima.json)}
+
 
