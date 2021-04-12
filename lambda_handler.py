@@ -2,6 +2,8 @@ import urllib3
 import json
 import logging
 
+logging.basicConfig(level=logging.INFO)
+
 def lambda_handler(event, context):
     print(event)
     body = json.loads(event['body'])
@@ -12,21 +14,21 @@ def lambda_handler(event, context):
     response = http.request('GET',city)
     result = json.loads(response.data)
     code = result['cod']
-    print (code)
-    logging.basicConfig(filename="registro.log", level=logging.DEBUG)
-    logging.debug(code)
+    #logging.basicConfig(filename="registro.log", level=logging.DEBUG)
+    logging.info(code)
     
     if code == 200:
         message = {"ciudad" : ciudad,
             "temperatura":int(result['main']['temp'])- 273.15,
-            "viento":result['wind']['speed'],
-            "code": "200"
+            "viento":result['wind']['speed']
               }
         statuscode = '200'
+        logging.info('Mensaje exitoso')
     else:
         message = { "Error" : "Error en parametro"
               }
-        statuscode = '202'
+        statuscode = '400'
+        logging.info('Error en parametro')
     return {
         'statusCode': statuscode,
         'headers': {'Content-Type': 'application/json'},

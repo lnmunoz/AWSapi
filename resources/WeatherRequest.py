@@ -3,6 +3,7 @@ import json
 import unicodedata
 import logging
 
+#logging.basicConfig(level=logging.INFO)
 
 def quitartil(text):
 
@@ -31,7 +32,7 @@ ciudad = quitartil(ciudad)
 
 #url = "https://euic8aetta.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
 
-url = "https://fc7eb5lkp2.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
+url = "https://x6evx3onoa.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
 
 payload= '{\r\n    \"ciudad\":\"'+ciudad+'\"\r\n    }'
 
@@ -68,3 +69,5 @@ if code == '200':
   print("------------------------------------------------------")
 else:
   print("Parametro incorrecto")
+
+logging.warning('This is a warning message')
