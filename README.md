@@ -51,8 +51,5 @@ Ejemplo:
 Por resultado se obtiene:
 
 <img src="/resources/Salida.jpg" alt="Console">
-
-
-
 </body>
 </html>
