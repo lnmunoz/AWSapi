@@ -30,7 +30,7 @@ ciudad = quitartil(ciudad)
 
 #url = "https://euic8aetta.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
 
-url = "https://2fcs79r6k1.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
+url = "https://5wiex9waq4.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
 
 payload= '{\r\n    \"ciudad\":\"'+ciudad+'\"\r\n    }'
 
