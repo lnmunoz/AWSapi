@@ -1,6 +1,9 @@
 import requests
 import json
 import unicodedata
+import logging
+
+#logging.basicConfig(level=logging.INFO)
 
 
 def quitartil(text):
@@ -32,6 +35,7 @@ ciudad = quitartil(ciudad)
 
 url = "https://5wiex9waq4.execute-api.us-east-1.amazonaws.com/dev/LambdaClima/crea"
 
+
 payload= '{\r\n    \"ciudad\":\"'+ciudad+'\"\r\n    }'
 
 
@@ -50,6 +54,15 @@ response = requests.request("POST", url, headers=headers, data=payload)
 salida = response.json()
 #print (salida)
 code = salida['code']
+logging.basicConfig(filename="registro.log", level=logging.DEBUG)
+logging.debug('Prueba logueo')
+logging.info(salida)
+logging.info(response)
+#code = salida['code']
+code = str(response.status_code)
+logging.info(code)
+
+
 #print(code)
 if code == '200':
   print
@@ -60,4 +73,7 @@ if code == '200':
   print("Gracias por utilizar el servicio")
   print("------------------------------------------------------")
 else:
+
   print("Parametro incorrecto")
+
+logging.warning('This is a warning message')
